@@ -1,0 +1,88 @@
+<html lang="en">
+  <head>
+    <meta charset ="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+       Camera acesso
+    </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link href = "file-upload-with-preview.min.css"rel="stylesheet"/>
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  </head>
+
+<div class="header-container-wrapper">
+<div class="header-container">
+<div class="custom-header-bg">
+  <div class="page-center">
+    <div class="logo">Radiografia - imagens</div>
+    <div class="navigation">
+      <ul>
+        <li><a href="" class="button click-upload"><i class="fa fa-tasks" aria-hidden="true"></i>TRILHA DE APRENDIZAGEM</a></li>
+        <li><a href="#" class="button open-progress"><i class="fas fa-step-backward"></i>home</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+
+<body>
+  <section class="section">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-four-fifths">
+          <h1 class="title">
+            JavaScript Camera
+          </h1>
+          <video autoplay id="video"></video>
+          <button class="button is-hidden" id="btnPlay">
+            <span class="icon is-small">
+              <i class="fas fa-play"></i>
+            </span>
+          </button>
+          <button class="button" id="btnPause">
+            <span class="icon is-small">
+              <i class="fas fa-pause"></i>
+            </span>
+          </button>
+          <button class="button is-success" id="btnScreenshot">
+            <span class="icon is-small">
+              <i class="fas fa-camera"></i>
+            </span>
+          </button>
+          <button class="button" id="btnChangeCamera">
+            <span class="icon">
+              <i class="fas fa-sync-alt"></i>
+            </span>
+          </br>
+          </br>
+            <span>Switch camera</span>
+          </button>
+        </div>
+        <div class="column">
+          <h2 class="title">Fotos Capturadas</h2>
+          <div id="screenshots"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="footer-container-wrapper">
+    <div class="footer-container">
+      <div class="custom-footer-bg">
+        <div class="page-center">
+          <p> Software © 2021 | Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <canvas class="is-hidden" id="canvas" ></canvas>
+  <script src="camera_js.js"></script>
+</body>
+
+</html>
