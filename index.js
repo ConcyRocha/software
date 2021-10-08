@@ -1,13 +1,13 @@
-const http= require("http")
-const express = require('express')
-const server = express()
-server.use(express.static(__dirname + 'public'));
-const port = 4000;
-server.get("/", function(req,res){
-    res.sendFile(__dirname + "/index.html")
+var express = require("express");
+var app = express();
+var port = 4000;
+app.use('/public', express.static(__dirname + '/public'))
+
+app.get("/", function(req,res){
+    res.sendFile(__dirname + '/index.html')
     
 })
 
-server.listen(port,function(){
+app.listen(port,function(){
     console.info('servidor rodando em http://localhost:4000')
 })
