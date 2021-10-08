@@ -6,7 +6,7 @@
        Camera acesso
     </title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <link href = "file-upload-with-preview.min.css"rel="stylesheet"/>
+    <link href = "/public/file-upload-with-preview.min.css"rel="stylesheet"/>
     <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
@@ -35,9 +35,7 @@
     <div class="container">
       <div class="columns">
         <div class="column is-four-fifths">
-          <h1 class="title">
-            JavaScript Camera
-          </h1>
+          
           <video autoplay id="video"></video>
           <button class="button is-hidden" id="btnPlay">
             <span class="icon is-small">
@@ -58,14 +56,15 @@
             <span class="icon">
               <i class="fas fa-sync-alt"></i>
             </span>
-          </br>
-          </br>
-            <span>Switch camera</span>
+            <span class="alok">Switch camera</span>
           </button>
         </div>
         <div class="column">
-          <h2 class="title">Fotos Capturadas</h2>
+          <h2 class="title">Imagem Capturada</h2>
           <div id="screenshots"></div>
+          <ul>
+            <button type="submit" class="btn btn-info"><i class="fas fa-file-import"></i> Enviar</button>
+          </ul>
         </div>
       </div>
     </div>
@@ -82,7 +81,7 @@
   </div>
 
   <canvas class="is-hidden" id="canvas" ></canvas>
-  <script src="camera_js.js"></script>
+  <script src="/public/camera_js.js"></script>
 </body>
 
 </html>
