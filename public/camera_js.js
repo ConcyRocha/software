@@ -21,17 +21,19 @@
     const constraints = {
       video: {
         width: {
-          min: 1000,
-          ideal: 1000,
-          max: 1000,
+          min: 1280,
+          ideal: 1920,
+          max: 2560,
         },
         height: {
-          min: 700,
-          ideal: 1000,
-          max: 1040,
+          min: 720,
+          ideal: 1080,
+          max: 1440,
         },
       },
-    };
+    }
+    
+    const videoStream = await navigator.mediaDevices.getUserMedia(constraints)
   
     // use front face camera
     let useFrontCamera = true;
