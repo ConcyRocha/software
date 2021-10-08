@@ -7,8 +7,8 @@ app.get("/", function(req,res){
     res.sendFile(__dirname + '/index.html')
     
 })
-app.get("/camera_index", function(req,res){
-    res.sendFile(__dirname + '/camera_index.html')
+app.get("/camerIndex", function(req,res){
+    res.sendFile(__dirname + '/camerIndex.html')
     
 })
 
