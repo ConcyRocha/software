@@ -591,9 +591,12 @@
             .custom-header-bg {
               text-align: center;
             }
-            .custom-footer-bg{
+            .custom-footer-bg.page-center.p{
               text-align: center;
               font-size: 25px;
+            }
+            .page-center{
+              font-size: 27px;
             }
             .logo {
               width: 100%;
