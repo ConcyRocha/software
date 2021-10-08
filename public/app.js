@@ -25,12 +25,11 @@ $("#webcam-switch").change(function () {
  console.log("webcam stopped");
  } 
 });
- 
+
 $('#cameraFlip').click(function() {
- webcam.flip();
- webcam.start(); 
+    webcam.flip();
+    webcam.start();  
 });
- 
 $('#closeError').click(function() {
  $("#webcam-switch").prop('checked', false).change();
 });
