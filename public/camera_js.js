@@ -33,7 +33,7 @@
       },
     }
     
-    const videoStream = await navigator.mediaDevices.getUserMedia(constraints)
+   // const videoStream = await navigator.mediaDevices.getUserMedia(constraints)
   
     // use front face camera
     let useFrontCamera = true;
